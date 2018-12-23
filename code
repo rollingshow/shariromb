@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int a, b, c, r, s, t;
+	cout << "Введите размеры коробки a,b,c и размеры посылки r,s,t" << endl;
+	cin >> a >> b >> c>>r>>s>>t;
+	if (((a<=r)&&(b<=s)&&(c<=t))||((a<=r)&&(b<=t)&&(c<=s))||((a<=s)&&(b<=r)&&(c<=t))or((a<=s)&&(b<=t)&&(c<=r))||((a<=t)&&(b<=s)and(c<=r))||((a<=t)&&(b<=r)&&(c<=s)))
+		cout << "Коробку можно упаковать в посылку" << endl;
+	else cout << "Коробку нельзя упаковать в посылку" << endl;
+    return 0;
+}
